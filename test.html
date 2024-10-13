@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Submit Data to Google Sheets</title>
+</head>
+<body>
+
+  <h2>Submit Data to Google Sheets</h2>
+  
+  <!-- Form to capture user data -->
+  <form action="https://sheetdb.io/api/v1/wvehqlrooj3in" method="post" id="sheetdb">
+    <input type="text" name="name" placeholder="Name" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <input type="text" name="phone" placeholder="Phone" required>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <!-- JavaScript to handle form submission 
+  <script>
+    // Add event listener to handle form submission
+    document.getElementById('myForm').addEventListener('submit', function(e) {
+      e.preventDefault();  // Prevent default form submission behavior
+
+      // Get the form data
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+
+      // Create a FormData object to hold the form data
+      const formData = new FormData();
+      formData.append('name', name);
+      formData.append('email', email);
+
+      // Send form data to Google Apps Script Web App
+      fetch('https://script.google.com/macros/s/AKfycbwxLfHwyCc9LHYyN75P-fwtQ3iXSEEfRXRpBNz4wl2chzGmV7Wo8XyHYJ6oHfslyF76/exec', {  // Replace with your Web App URL
+        method: 'POST',
+        mode: 'no-cors', 
+        body: formData
+      })
+      .then(response => response.text())  // Get response text from server
+      .then(text => {
+        alert('Form submitted successfully: ' + text);  // Notify the user upon successful submission
+      })
+      .catch(error => {
+        console.error('Error!', error.message);  // Log any errors
+      });
+    });
+  </script>-->
+
+</body>
+</html>
