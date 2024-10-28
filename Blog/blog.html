@@ -1,0 +1,1451 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="profile" href="https://gmpg.org/xfn/11" />
+  <title>Pods Technology Solutions</title>
+  <meta name="robots" content="max-image-preview:large" />
+
+  <script>
+    window._wpemojiSettings = {
+      baseUrl: "https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/",
+      ext: ".png",
+      svgUrl: "https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/",
+      svgExt: ".svg",
+    };
+    /*! This file is auto-generated */
+    !(function (i, n) {
+      var o, s, e;
+      function c(e) {
+        try {
+          var t = { supportTests: e, timestamp: new Date().valueOf() };
+          sessionStorage.setItem(o, JSON.stringify(t));
+        } catch (e) { }
+      }
+      function p(e, t, n) {
+        e.clearRect(0, 0, e.canvas.width, e.canvas.height),
+          e.fillText(t, 0, 0);
+        var t = new Uint32Array(
+          e.getImageData(0, 0, e.canvas.width, e.canvas.height).data
+        ),
+          r =
+            (e.clearRect(0, 0, e.canvas.width, e.canvas.height),
+              e.fillText(n, 0, 0),
+              new Uint32Array(
+                e.getImageData(0, 0, e.canvas.width, e.canvas.height).data
+              ));
+        return t.every(function (e, t) {
+          return e === r[t];
+        });
+      }
+      function u(e, t, n) {
+        switch (t) {
+          case "flag":
+            return n(
+              e,
+              "\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f",
+              "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f"
+            )
+              ? !1
+              : !n(
+                e,
+                "\ud83c\uddfa\ud83c\uddf3",
+                "\ud83c\uddfa\u200b\ud83c\uddf3"
+              ) &&
+              !n(
+                e,
+                "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f",
+                "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f"
+              );
+          case "emoji":
+            return !n(
+              e,
+              "\ud83d\udc26\u200d\u2b1b",
+              "\ud83d\udc26\u200b\u2b1b"
+            );
+        }
+        return !1;
+      }
+      function f(e, t, n) {
+        var r =
+          "undefined" != typeof WorkerGlobalScope &&
+            self instanceof WorkerGlobalScope
+            ? new OffscreenCanvas(300, 150)
+            : i.createElement("canvas"),
+          a = r.getContext("2d", { willReadFrequently: !0 }),
+          o = ((a.textBaseline = "top"), (a.font = "600 32px Arial"), {});
+        return (
+          e.forEach(function (e) {
+            o[e] = t(a, e, n);
+          }),
+          o
+        );
+      }
+      function t(e) {
+        var t = i.createElement("script");
+        (t.src = e), (t.defer = !0), i.head.appendChild(t);
+      }
+      "undefined" != typeof Promise &&
+        ((o = "wpEmojiSettingsSupports"),
+          (s = ["flag", "emoji"]),
+          (n.supports = { everything: !0, everythingExceptFlag: !0 }),
+          (e = new Promise(function (e) {
+            i.addEventListener("DOMContentLoaded", e, { once: !0 });
+          })),
+          new Promise(function (t) {
+            var n = (function () {
+              try {
+                var e = JSON.parse(sessionStorage.getItem(o));
+                if (
+                  "object" == typeof e &&
+                  "number" == typeof e.timestamp &&
+                  new Date().valueOf() < e.timestamp + 604800 &&
+                  "object" == typeof e.supportTests
+                )
+                  return e.supportTests;
+              } catch (e) { }
+              return null;
+            })();
+            if (!n) {
+              if (
+                "undefined" != typeof Worker &&
+                "undefined" != typeof OffscreenCanvas &&
+                "undefined" != typeof URL &&
+                URL.createObjectURL &&
+                "undefined" != typeof Blob
+              )
+                try {
+                  var e =
+                    "postMessage(" +
+                    f.toString() +
+                    "(" +
+                    [JSON.stringify(s), u.toString(), p.toString()].join(
+                      ","
+                    ) +
+                    "));",
+                    r = new Blob([e], { type: "text/javascript" }),
+                    a = new Worker(URL.createObjectURL(r), {
+                      name: "wpTestEmojiSupports",
+                    });
+                  return void (a.onmessage = function (e) {
+                    c((n = e.data)), a.terminate(), t(n);
+                  });
+                } catch (e) { }
+              c((n = f(s, u, p)));
+            }
+            t(n);
+          })
+            .then(function (e) {
+              for (var t in e)
+                (n.supports[t] = e[t]),
+                  (n.supports.everything =
+                    n.supports.everything && n.supports[t]),
+                  "flag" !== t &&
+                  (n.supports.everythingExceptFlag =
+                    n.supports.everythingExceptFlag && n.supports[t]);
+              (n.supports.everythingExceptFlag =
+                n.supports.everythingExceptFlag && !n.supports.flag),
+                (n.DOMReady = !1),
+                (n.readyCallback = function () {
+                  n.DOMReady = !0;
+                });
+            })
+            .then(function () {
+              return e;
+            })
+            .then(function () {
+              var e;
+              n.supports.everything ||
+                (n.readyCallback(),
+                  (e = n.source || {}).concatemoji
+                    ? t(e.concatemoji)
+                    : e.wpemoji && e.twemoji && (t(e.twemoji), t(e.wpemoji)));
+            }));
+    })((window, document), window._wpemojiSettings);
+  </script>
+  <style id="wp-emoji-styles-inline-css">
+    img.wp-smiley,
+    img.emoji {
+      display: inline !important;
+      border: none !important;
+      box-shadow: none !important;
+      height: 1em !important;
+      width: 1em !important;
+      margin: 0 0.07em !important;
+      vertical-align: -0.1em !important;
+      background: none !important;
+      padding: 0 !important;
+    }
+  </style>
+  <link rel="stylesheet" id="wp-block-library-css" href="style.min.css" media="all" />
+  <style id="classic-theme-styles-inline-css">
+    /*! This file is auto-generated */
+    .wp-block-button__link {
+      color: #fff;
+      background-color: #32373c;
+      border-radius: 9999px;
+      box-shadow: none;
+      text-decoration: none;
+      padding: calc(0.667em + 2px) calc(1.333em + 2px);
+      font-size: 1.125em;
+    }
+
+    .wp-block-file__button {
+      background: #32373c;
+      color: #fff;
+      text-decoration: none;
+    }
+  </style>
+  <style id="global-styles-inline-css">
+    :root {
+      --wp--preset--aspect-ratio--square: 1;
+      --wp--preset--aspect-ratio--4-3: 4/3;
+      --wp--preset--aspect-ratio--3-4: 3/4;
+      --wp--preset--aspect-ratio--3-2: 3/2;
+      --wp--preset--aspect-ratio--2-3: 2/3;
+      --wp--preset--aspect-ratio--16-9: 16/9;
+      --wp--preset--aspect-ratio--9-16: 9/16;
+      --wp--preset--color--black: #000000;
+      --wp--preset--color--cyan-bluish-gray: #abb8c3;
+      --wp--preset--color--white: #ffffff;
+      --wp--preset--color--pale-pink: #f78da7;
+      --wp--preset--color--vivid-red: #cf2e2e;
+      --wp--preset--color--luminous-vivid-orange: #ff6900;
+      --wp--preset--color--luminous-vivid-amber: #fcb900;
+      --wp--preset--color--light-green-cyan: #7bdcb5;
+      --wp--preset--color--vivid-green-cyan: #00d084;
+      --wp--preset--color--pale-cyan-blue: #8ed1fc;
+      --wp--preset--color--vivid-cyan-blue: #0693e3;
+      --wp--preset--color--vivid-purple: #9b51e0;
+      --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,
+          rgba(6, 147, 227, 1) 0%,
+          rgb(155, 81, 224) 100%);
+      --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,
+          rgb(122, 220, 180) 0%,
+          rgb(0, 208, 130) 100%);
+      --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,
+          rgba(252, 185, 0, 1) 0%,
+          rgba(255, 105, 0, 1) 100%);
+      --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,
+          rgba(255, 105, 0, 1) 0%,
+          rgb(207, 46, 46) 100%);
+      --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,
+          rgb(238, 238, 238) 0%,
+          rgb(169, 184, 195) 100%);
+      --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,
+          rgb(74, 234, 220) 0%,
+          rgb(151, 120, 209) 20%,
+          rgb(207, 42, 186) 40%,
+          rgb(238, 44, 130) 60%,
+          rgb(251, 105, 98) 80%,
+          rgb(254, 248, 76) 100%);
+      --wp--preset--gradient--blush-light-purple: linear-gradient(135deg,
+          rgb(255, 206, 236) 0%,
+          rgb(152, 150, 240) 100%);
+      --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,
+          rgb(254, 205, 165) 0%,
+          rgb(254, 45, 45) 50%,
+          rgb(107, 0, 62) 100%);
+      --wp--preset--gradient--luminous-dusk: linear-gradient(135deg,
+          rgb(255, 203, 112) 0%,
+          rgb(199, 81, 192) 50%,
+          rgb(65, 88, 208) 100%);
+      --wp--preset--gradient--pale-ocean: linear-gradient(135deg,
+          rgb(255, 245, 203) 0%,
+          rgb(182, 227, 212) 50%,
+          rgb(51, 167, 181) 100%);
+      --wp--preset--gradient--electric-grass: linear-gradient(135deg,
+          rgb(202, 248, 128) 0%,
+          rgb(113, 206, 126) 100%);
+      --wp--preset--gradient--midnight: linear-gradient(135deg,
+          rgb(2, 3, 129) 0%,
+          rgb(40, 116, 252) 100%);
+      --wp--preset--font-size--small: 13px;
+      --wp--preset--font-size--medium: 20px;
+      --wp--preset--font-size--large: 36px;
+      --wp--preset--font-size--x-large: 42px;
+      --wp--preset--spacing--20: 0.44rem;
+      --wp--preset--spacing--30: 0.67rem;
+      --wp--preset--spacing--40: 1rem;
+      --wp--preset--spacing--50: 1.5rem;
+      --wp--preset--spacing--60: 2.25rem;
+      --wp--preset--spacing--70: 3.38rem;
+      --wp--preset--spacing--80: 5.06rem;
+      --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+      --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+      --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
+      --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1),
+        6px 6px rgba(0, 0, 0, 1);
+      --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
+    }
+
+    :where(.is-layout-flex) {
+      gap: 0.5em;
+    }
+
+    :where(.is-layout-grid) {
+      gap: 0.5em;
+    }
+
+    body .is-layout-flex {
+      display: flex;
+    }
+
+    .is-layout-flex {
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .is-layout-flex> :is(*, div) {
+      margin: 0;
+    }
+
+    body .is-layout-grid {
+      display: grid;
+    }
+
+    .is-layout-grid> :is(*, div) {
+      margin: 0;
+    }
+
+    :where(.wp-block-columns.is-layout-flex) {
+      gap: 2em;
+    }
+
+    :where(.wp-block-columns.is-layout-grid) {
+      gap: 2em;
+    }
+
+    :where(.wp-block-post-template.is-layout-flex) {
+      gap: 1.25em;
+    }
+
+    :where(.wp-block-post-template.is-layout-grid) {
+      gap: 1.25em;
+    }
+
+    .has-black-color {
+      color: var(--wp--preset--color--black) !important;
+    }
+
+    .has-cyan-bluish-gray-color {
+      color: var(--wp--preset--color--cyan-bluish-gray) !important;
+    }
+
+    .has-white-color {
+      color: var(--wp--preset--color--white) !important;
+    }
+
+    .has-pale-pink-color {
+      color: var(--wp--preset--color--pale-pink) !important;
+    }
+
+    .has-vivid-red-color {
+      color: var(--wp--preset--color--vivid-red) !important;
+    }
+
+    .has-luminous-vivid-orange-color {
+      color: var(--wp--preset--color--luminous-vivid-orange) !important;
+    }
+
+    .has-luminous-vivid-amber-color {
+      color: var(--wp--preset--color--luminous-vivid-amber) !important;
+    }
+
+    .has-light-green-cyan-color {
+      color: var(--wp--preset--color--light-green-cyan) !important;
+    }
+
+    .has-vivid-green-cyan-color {
+      color: var(--wp--preset--color--vivid-green-cyan) !important;
+    }
+
+    .has-pale-cyan-blue-color {
+      color: var(--wp--preset--color--pale-cyan-blue) !important;
+    }
+
+    .has-vivid-cyan-blue-color {
+      color: var(--wp--preset--color--vivid-cyan-blue) !important;
+    }
+
+    .has-vivid-purple-color {
+      color: var(--wp--preset--color--vivid-purple) !important;
+    }
+
+    .has-black-background-color {
+      background-color: var(--wp--preset--color--black) !important;
+    }
+
+    .has-cyan-bluish-gray-background-color {
+      background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+    }
+
+    .has-white-background-color {
+      background-color: var(--wp--preset--color--white) !important;
+    }
+
+    .has-pale-pink-background-color {
+      background-color: var(--wp--preset--color--pale-pink) !important;
+    }
+
+    .has-vivid-red-background-color {
+      background-color: var(--wp--preset--color--vivid-red) !important;
+    }
+
+    .has-luminous-vivid-orange-background-color {
+      background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+    }
+
+    .has-luminous-vivid-amber-background-color {
+      background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+    }
+
+    .has-light-green-cyan-background-color {
+      background-color: var(--wp--preset--color--light-green-cyan) !important;
+    }
+
+    .has-vivid-green-cyan-background-color {
+      background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+    }
+
+    .has-pale-cyan-blue-background-color {
+      background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+    }
+
+    .has-vivid-cyan-blue-background-color {
+      background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+    }
+
+    .has-vivid-purple-background-color {
+      background-color: var(--wp--preset--color--vivid-purple) !important;
+    }
+
+    .has-black-border-color {
+      border-color: var(--wp--preset--color--black) !important;
+    }
+
+    .has-cyan-bluish-gray-border-color {
+      border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+    }
+
+    .has-white-border-color {
+      border-color: var(--wp--preset--color--white) !important;
+    }
+
+    .has-pale-pink-border-color {
+      border-color: var(--wp--preset--color--pale-pink) !important;
+    }
+
+    .has-vivid-red-border-color {
+      border-color: var(--wp--preset--color--vivid-red) !important;
+    }
+
+    .has-luminous-vivid-orange-border-color {
+      border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+    }
+
+    .has-luminous-vivid-amber-border-color {
+      border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+    }
+
+    .has-light-green-cyan-border-color {
+      border-color: var(--wp--preset--color--light-green-cyan) !important;
+    }
+
+    .has-vivid-green-cyan-border-color {
+      border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+    }
+
+    .has-pale-cyan-blue-border-color {
+      border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+    }
+
+    .has-vivid-cyan-blue-border-color {
+      border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+    }
+
+    .has-vivid-purple-border-color {
+      border-color: var(--wp--preset--color--vivid-purple) !important;
+    }
+
+    .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+      background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
+    }
+
+    .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+      background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
+    }
+
+    .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+      background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
+    }
+
+    .has-luminous-vivid-orange-to-vivid-red-gradient-background {
+      background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
+    }
+
+    .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+      background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
+    }
+
+    .has-cool-to-warm-spectrum-gradient-background {
+      background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
+    }
+
+    .has-blush-light-purple-gradient-background {
+      background: var(--wp--preset--gradient--blush-light-purple) !important;
+    }
+
+    .has-blush-bordeaux-gradient-background {
+      background: var(--wp--preset--gradient--blush-bordeaux) !important;
+    }
+
+    .has-luminous-dusk-gradient-background {
+      background: var(--wp--preset--gradient--luminous-dusk) !important;
+    }
+
+    .has-pale-ocean-gradient-background {
+      background: var(--wp--preset--gradient--pale-ocean) !important;
+    }
+
+    .has-electric-grass-gradient-background {
+      background: var(--wp--preset--gradient--electric-grass) !important;
+    }
+
+    .has-midnight-gradient-background {
+      background: var(--wp--preset--gradient--midnight) !important;
+    }
+
+    .has-small-font-size {
+      font-size: var(--wp--preset--font-size--small) !important;
+    }
+
+    .has-medium-font-size {
+      font-size: var(--wp--preset--font-size--medium) !important;
+    }
+
+    .has-large-font-size {
+      font-size: var(--wp--preset--font-size--large) !important;
+    }
+
+    .has-x-large-font-size {
+      font-size: var(--wp--preset--font-size--x-large) !important;
+    }
+
+    :where(.wp-block-post-template.is-layout-flex) {
+      gap: 1.25em;
+    }
+
+    :where(.wp-block-post-template.is-layout-grid) {
+      gap: 1.25em;
+    }
+
+    :where(.wp-block-columns.is-layout-flex) {
+      gap: 2em;
+    }
+
+    :where(.wp-block-columns.is-layout-grid) {
+      gap: 2em;
+    }
+
+    :root :where(.wp-block-pullquote) {
+      font-size: 1.5em;
+      line-height: 1.6;
+    }
+  </style>
+  <!--other css files-->
+  <link href="./../flaticon.css" rel="stylesheet">
+  <link href="./../owl.css" rel="stylesheet">
+  <link href="./../bootstrap.css" rel="stylesheet">
+  <link href="./../jquery.fancybox.min.css" rel="stylesheet">
+  <link href="./../animate.css" rel="stylesheet">
+  <link href="./../color.css" rel="stylesheet">
+  <link href="./../global.css" rel="stylesheet">
+  <link href="./../style.css" rel="stylesheet">
+  <link href="./../swiper.min.css" rel="stylesheet">
+  <link href="./../responsive.css" rel="stylesheet">
+  <!--  -->
+  <link rel="stylesheet" id="template-kit-export-css" href="template-kit-export-public.css" media="all" />
+  <link rel="stylesheet" id="hello-elementor-css" href="style.min-1.css" media="all" />
+  <link rel="stylesheet" id="hello-elementor-theme-style-css" href="theme.min.css" media="all" />
+  <link rel="stylesheet" id="elementor-frontend-css" href="frontend.min.css" media="all" />
+  <link rel="stylesheet" id="elementor-post-9-css" href="post-9.css" media="all" />
+  <link rel="stylesheet" id="elementor-icons-css" href="elementor-icons.min.css" media="all" />
+  <link rel="stylesheet" id="swiper-css" href="swiper.min.css" media="all" />
+  <link rel="stylesheet" id="e-swiper-css" href="e-swiper.min.css" media="all" />
+  <link rel="stylesheet" id="elementor-pro-css" href="frontend.min-1.css" media="all" />
+  <link rel="stylesheet" id="elementor-post-48-css" href="post-48.css" media="all" />
+  <link rel="stylesheet" id="elementor-post-68-css" href="post-68.css" media="all" />
+  <link rel="stylesheet" id="elementor-post-150-css" href="post-150.css" media="all" />
+  <link rel="stylesheet" id="elementor-icons-ekiticons-css" href="ekiticons.css" media="all" />
+  <link rel="stylesheet" id="skb-cife-brands_icon-css" href="icomoon_brands.css" media="all" />
+  <link rel="stylesheet" id="skb-cife-devicons_icon-css" href="devicons.min.css" media="all" />
+  <link rel="stylesheet" id="skb-cife-elegant_icon-css" href="elegant.css" media="all" />
+  <link rel="stylesheet" id="skb-cife-elusive_icon-css" href="elusive-icons.min.css" media="all" />
+  <link rel="stylesheet" id="skb-cife-icofont_icon-css" href="icofont.min.css" media="all" />
+  <link rel="stylesheet" id="skb-cife-icomoon_icon-css" href="icomoon.css" media="all" />
+  <link rel="stylesheet" id="skb-cife-iconic_icon-css" href="iconic.css" media="all" />
+  <link rel="stylesheet" id="skb-cife-ion_icon-css" href="ionicons.min.css" media="all" />
+  <link rel="stylesheet" id="skb-cife-linearicons_icon-css" href="linearicons.css" media="all" />
+  <link rel="stylesheet" id="skb-cife-lineawesome_icon-css" href="line-awesome.min.css" media="all" />
+  <link rel="stylesheet" id="skb-cife-line_icon-css" href="lineicons.css" media="all" />
+  <link rel="stylesheet" id="skb-cife-materialdesign_icon-css" href="materialdesignicons.min.css" media="all" />
+  <link rel="stylesheet" id="skb-cife-open_iconic-css" href="open-iconic.css" media="all" />
+  <link rel="stylesheet" id="skb-cife-simpleline_icon-css" href="simple-line-icons.css" media="all" />
+  <link rel="stylesheet" id="skb-cife-themify_icon-css" href="themify.css" media="all" />
+  <link rel="stylesheet" id="ekit-widget-styles-css" href="widget-styles.css" media="all" />
+  <link rel="stylesheet" id="ekit-responsive-css" href="responsive.css" media="all" />
+  <link rel="stylesheet" id="google-fonts-1-css" href="css.css" media="all" />
+  <link rel="stylesheet" id="elementor-icons-shared-0-css" href="fontawesome.min.css" media="all" />
+  <link rel="stylesheet" id="elementor-icons-fa-solid-css" href="solid.min.css" media="all" />
+  <link rel="stylesheet" id="elementor-icons-skb_cife-themify-icon-css" href="themify.css" media="all" />
+  <link rel="stylesheet" id="elementor-icons-skb_cife-icomoon-icon-css" href="icomoon.css" media="all" />
+  <link rel="stylesheet" id="elementor-icons-skb_cife-simple_line-icon-css" href="simple-line-icons.css" media="all" />
+  <link rel="stylesheet" id="elementor-icons-fa-regular-css" href="regular.min.css" media="all" />
+  <link rel="stylesheet" id="elementor-icons-fa-brands-css" href="brands.min.css" media="all" />
+  <link rel="stylesheet" id="elementor-icons-skb_cife-materialdesign-icon-css" href="materialdesignicons.min.css"
+    media="all" />
+  <script src="jquery.min.js" id="jquery-core-js"></script>
+  <script src="jquery-migrate.min.js" id="jquery-migrate-js"></script>
+  <script src="template-kit-export-public.js" id="template-kit-export-js"></script>
+  <meta name="generator"
+    content="Elementor 3.24.0; features: additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-auto" />
+  <style>
+    .e-con.e-parent:nth-of-type(n + 4):not(.e-lazyloaded):not(.e-no-lazyload),
+    .e-con.e-parent:nth-of-type(n + 4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+      background-image: none !important;
+    }
+
+    @media screen and (max-height: 1024px) {
+
+      .e-con.e-parent:nth-of-type(n + 3):not(.e-lazyloaded):not(.e-no-lazyload),
+      .e-con.e-parent:nth-of-type(n + 3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+        background-image: none !important;
+      }
+    }
+
+    @media screen and (max-height: 640px) {
+
+      .e-con.e-parent:nth-of-type(n + 2):not(.e-lazyloaded):not(.e-no-lazyload),
+      .e-con.e-parent:nth-of-type(n + 2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+        background-image: none !important;
+      }
+    }
+  </style>
+  <link rel="shortcut icon" href="./../Assets/img/icon.ico" />
+</head>
+
+<body
+  class="post-template-default single single-post postid-115 single-format-standard elementor-default elementor-kit-9 elementor-page-150">
+  <div class="boxed_wrapper">
+
+    <!-- mouse-pointer -->
+    <!-- <div class="mouse-pointer" id="mouse-pointer">
+          <div class="icon"><i class="icon-06"></i><i class="icon-05"></i></div>
+      </div> -->
+    <!-- mouse-pointer end -->
+
+    <!-- preloader -->
+    <div class="loader-wrap">
+      <div class="hendel__preloder">
+        <div class="preloader">
+          <div class="preloader-ring">podstechnology podstechnology podstechnology</div>
+          <div class="preloader-ring">podstechnology podstechnology podstechnology</div>
+        </div>
+      </div>
+    </div>
+    <!-- preloader end -->
+
+    <!-- main header -->
+    <header class="main-header header__style__one ">
+      <!-- header-top-one -->
+      <div class="header-top-one">
+        <div class="auto-container">
+          <div class="top__inner">
+            <div class="top__hrader__left">
+              <ul>
+                <li><span>Address :</span> M.G.M Road, Kolkata-700007</li>
+                <li>/</li>
+                <li><span>Email :</span> <a
+                    href="mailto:info@podstechnologysolutions.com">info@podstechnologysolutions.com</a></li>
+              </ul>
+            </div>
+            <div class="top__hrader__right">
+              <ul>
+                <!-- <li><a href="#"><i class="icon-10"></i></a></li>
+                              <li><a href="#"><i class="icon-14"></i></a></li> -->
+                <li><a href="https://www.linkedin.com/company/pods-technology-solutions/"><i class="icon-01"></i></a>
+                </li>
+                <!-- <li><a href="#"><i class="icon-11"></i></a></li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- header-lower -->
+      <div class="header-lower">
+        <div class="auto-container">
+          <div class="outer-box">
+            <div class="logo-box">
+              <figure class="logo"><a href=""><img src="./../Assets/img/logo.png" alt=""></a></figure>
+            </div>
+            <div class="menu-area clearfix">
+              <!--Mobile Navigation Toggler-->
+              <div class="mobile-nav-toggler">
+                <i class="icon-bar"></i>
+                <i class="icon-bar"></i>
+                <i class="icon-bar"></i>
+              </div>
+              <nav class="main-menu navbar-expand-md navbar-light">
+                <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
+                  <ul class="navigation clearfix home-menu">
+                    <li><a href="./../index.html">Home</a>
+                      <!-- <ul>
+                                              <li><a href="https://test.valorwide.com/datamatrix/index.html">Home One </a></li>
+                                              <li><a href="https://test.valorwide.com/datamatrix/index-2.html">Home Two </a></li>
+                                              <li><a href="https://test.valorwide.com/datamatrix/index-3.html">Home Three </a></li>
+                                          </ul> -->
+                    </li>
+                    <li><a href="./../about.html">About </a></li>
+                    <li class="dropdown"><a href="./../#service-section">Services </a>
+                      <ul>
+                        <li><a href="./../training.html">Cyber Security Training </a></li>
+                        <li><a href="./../cyberSservices.html">Cyber Security Services</a></li>
+                        <li><a href="./../digitalServices.html">Digital Solution Services</a></li>
+                      </ul>
+                    </li>
+                    <!-- <li class="dropdown"><a href="#">Page</a>
+                                          <ul>
+                                              <li class="dropdown"><a href="#">Projects </a>
+                                                  <ul>
+                                                      <li><a href="https://test.valorwide.com/datamatrix/projects.html">Projects </a></li>
+                                                      <li><a href="https://test.valorwide.com/datamatrix/projects-details.html">Projects Details</a></li>
+                                                  </ul>
+                                              </li>
+                                              <li><a href="https://test.valorwide.com/datamatrix/pricing.html">Pricing</a></li>
+                                              <li><a href="https://test.valorwide.com/datamatrix/team.html">Team</a></li>
+                                              <li><a href="https://test.valorwide.com/datamatrix/testimonial.html">Testimonial</a></li>
+                                              <li><a href="https://test.valorwide.com/datamatrix/404.html">404 Page</a></li>
+                                          </ul>
+                                      </li> -->
+                    <li><a href="#">Blog</a>
+                    </li>
+                    <li><a href="./../contact.html">Contact</a></li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+            <div class="btn-box">
+              <!-- <a href="contact.html" class="theme-btn theme-btn-one"><i class="icon-02"></i> Get in Touch</a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--sticky Header-->
+      <div class="sticky-header">
+        <div class="auto-container">
+          <div class="outer-box">
+            <div class="logo-box">
+              <figure class="logo"><a href=""><img src="./../Assets/img/logo.png" alt=""></a></figure>
+            </div>
+            <div class="menu-area clearfix">
+              <nav class="main-menu clearfix">
+                <!--Keep This Empty / Menu will come through Javascript-->
+              </nav>
+            </div>
+            <div class="btn-box">
+              <!-- <a href="contact.html" class="theme-btn theme-btn-one"><i class="icon-02"></i> Get in Touch</a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- main-header end -->
+
+    <!-- Mobile Menu  -->
+    <div class="mobile-menu">
+      <div class="menu-backdrop"></div>
+      <div class="close-btn"><i class="icon-fa-times"></i></div>
+
+      <nav class="menu-box">
+        <div class="nav-logo"><a href=""><img src="./../Assets/img/logo.png" alt="" title=""></a></div>
+        <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
+        <div class="contact-info">
+          <h4>Contact Info</h4>
+          <ul>
+            <li>M.G.M Road, Kolkata-700007</li>
+            <li><a href="tel:+918070309990">+91 8070309990</a></li>
+            <li><a href="mailto:podstechnologysolutions@gmail.com">podstechnologysolutions@gmail.com</a></li>
+            <li><a href="mailto:info@podstechnologysolutions.com">info@podstechnologysolutions.com</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!-- End Mobile Menu -->
+
+    <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+    <div data-elementor-type="header" data-elementor-id="48" class="elementor elementor-48 elementor-location-header"
+      data-elementor-post-type="elementor_library"></div>
+    <div data-elementor-type="single-post" data-elementor-id="150"
+      class="elementor elementor-150 elementor-location-single post-115 post type-post status-publish format-standard has-post-thumbnail hentry category-learning-resources tag-careerboost tag-elearning tag-futureready tag-itcertifications tag-onlineeducation tag-skilladvancement tag-techinsights tag-techtrends tag-virtualclassroom"
+      data-elementor-post-type="elementor_library">
+      <section
+        class="elementor-section elementor-top-section elementor-element elementor-element-0895292 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+        data-id="0895292" data-element_type="section">
+        <div class="elementor-container elementor-column-gap-default">
+          <div
+            class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-889eeb7"
+            data-id="889eeb7" data-element_type="column">
+            <div class="elementor-widget-wrap elementor-element-populated">
+              <div
+                class="elementor-element elementor-element-ea972f6 elementor-widget elementor-widget-theme-post-featured-image elementor-widget-image"
+                data-id="ea972f6" data-element_type="widget" data-widget_type="theme-post-featured-image.default">
+                <div class="elementor-widget-container">
+                  <img fetchpriority="high" width="1280" height="853" src="4.jpg"
+                    class="attachment-full size-full wp-image-109"
+                    alt="Schoolgirl Using Tablet Computer At Home, Learning Having Fun Online"
+                    sizes="(max-width: 1280px) 100vw, 1280px" />
+                </div>
+              </div>
+              <div
+                class="elementor-element elementor-element-24b74ee elementor-widget elementor-widget-theme-post-content"
+                data-id="24b74ee" data-element_type="widget" data-widget_type="theme-post-content.default">
+                <div class="elementor-widget-container">
+                  <br /><br />
+                  <p>
+                    In the ever-evolving landscape of artificial intelligence,
+                    the speedy increase of generative AI tools, prominently
+                    exemplified via ChatGPT, brings forth remarkable
+                    possibilities and challenges. As corporations harness the
+                    power of these equipment to automate content material advent
+                    and enhance person reports, it becomes vital to address the
+                    inherent protection issues related to their usage.
+                  </p>
+
+                  <h3>The Risks: Unveiling the&nbsp;Shadows</h3>
+
+                  <p>
+                    Generative AI equipment introduce a myriad of dangers,
+                    casting shadows over the promising improvements they offer.
+                    one of the primary worries is the potential inclusion of
+                    sensitive records in the generated content. This inadvertent
+                    publicity poses a extreme risk of data breaches,
+                    compromising the confidentiality of crucial records.
+                    moreover, the deployment of 0.33-celebration generative AI
+                    gear heightens the chance landscape, elevating alarms for
+                    compromised identities.
+                  </p>
+
+                  <h4>
+                    Data Breaches and Compromised Identities: The
+                    Looming&nbsp;Threat
+                  </h4>
+
+                  <ul>
+                    <li>
+                      <strong>Inclusion of Sensitive Data:</strong><br />
+                      Generative AI scripts can also unknowingly embed touchy
+                      statistics, growing a vulnerability for information
+                      breaches. corporations should meticulously scrutinize the
+                      generated content material to make certain the exclusion
+                      of private facts.
+                    </li>
+                    <li>
+                      <strong>Third-Party Tool Risks:</strong><br />
+                      The utilization of third-party generative AI gear demands
+                      careful evaluation. Lack of scrutiny can cause compromised
+                      identities, necessitating an intensive expertise of the
+                      safety implications and adherence to cybersecurity
+                      requirements.
+                    </li>
+                  </ul>
+                  <br />
+                  <h4>
+                    Safeguarding the Future: Implementing Responsible AI
+                    Practices
+                  </h4>
+
+                  <p>
+                    To navigate those risks and at ease the AI frontier,
+                    organizations need to proactively enforce strong safeguards
+                    and cybersecurity constraints.
+                  </p>
+
+                  <ul>
+                    <li>
+                      <strong>Thorough Scrutiny of AI Scripts:</strong><br />
+                      <p>
+                        Ordinary Audits and critiques of generative AI scripts
+                        are paramount. This includes making sure the exclusion
+                        of sensitive statistics and mitigating the threat of
+                        inadvertent records exposure.
+                      </p>
+                    </li>
+                    <li>
+                      <strong>Evaluation of AI Tool Results:</strong><br />
+                      <p>
+                        A vigilant assessment of outcomes produced by using
+                        generative AI gear is important. This proactive
+                        technique allows become aware of and address potential
+                        risks related to the content material generated.
+                      </p>
+                    </li>
+                    <li>
+                      <strong>Responsible Utilization of Third-Party Tools:</strong><br />
+                      <p>
+                        Groups should exercise caution whilst incorporating
+                        third-party generative AI equipment. Knowledge the
+                        safety implications and ensuring compliance with
+                        cybersecurity standards are important steps in fostering
+                        accountable AI utilization.
+                      </p>
+                    </li>
+                    <li>
+                      <strong>Employee Education and AI-Specific Security
+                        Features:</strong><br />
+                      <p>
+                        Human factors play a pivotal function in AI security.
+                        Employee education applications should emphasize the
+                        responsible use of generative AI tools. Moreover,
+                        enforcing AI-specific safety features in addition
+                        fortifies an organisation's defense towards capability
+                        threats.
+                      </p>
+                    </li>
+                  </ul>
+
+                  <h3>Conclusion: Navigating the New&nbsp;Frontier</h3>
+
+                  <p>
+                    As groups retain to experience the wave of generative AI
+                    advancements, securing the AI frontier calls for a holistic
+                    technique. By way of acknowledging the dangers, enforcing
+                    stringent safeguards, and fostering responsible AI
+                    practices, we are able to herald a brand new technology
+                    wherein the blessings of generative AI are maximized, and
+                    the associated risks are minimized.
+                  </p>
+                  <p>
+                    In the ever-evolving dance among innovation and protection,
+                    finding the right balance guarantees that generative AI
+                    turns into a pressure for fine transformation with out
+                    compromising the integrity of sensitive facts or risking the
+                    identities of those it serves.
+                  </p>
+                  <p>
+                    Keep in mind, in securing the AI frontier, we no longer
+                    simplest guard our information however additionally pave the
+                    manner for a future where artificial intelligence turns into
+                    an ally we will trust.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="elementor-element elementor-element-47ede46 elementor-share-buttons--skin-framed elementor-share-buttons--shape-circle elementor-grid-4 elementor-grid-mobile-2 elementor-share-buttons--color-custom elementor-share-buttons--view-icon-text elementor-widget elementor-widget-share-buttons"
+                data-id="47ede46" data-element_type="widget" data-widget_type="share-buttons.default">
+              </div>
+              <div
+                class="elementor-element elementor-element-b10b213 elementor-author-box--avatar-yes elementor-author-box--name-yes elementor-author-box--biography-yes elementor-author-box--link-no elementor-widget elementor-widget-author-box"
+                data-id="b10b213" data-element_type="widget" data-widget_type="author-box.default">
+                <div class="elementor-widget-container">
+                  <div class="elementor-author-box">
+                    <div class="elementor-author-box__avatar">
+                      <img src="dbc9199e994702453cbd1cb9b8734d29.jpeg" alt="Picture of Natalie Stanley"
+                        loading="lazy" />
+                    </div>
+
+                    <div class="elementor-author-box__text">
+                      <div>
+                        <div class="elementor-author-box__name">
+                          Natalie Stanley
+                        </div>
+                      </div>
+
+                      <div class="elementor-author-box__bio">
+                        Hi, this is dummy biographical info for the design
+                        template kit moxcreative. If you have any questions,
+                        don't hesitate to send us a message on the ThemeForest
+                        profile page.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="elementor-element elementor-element-0c0b485 elementor-widget elementor-widget-post-comments"
+                data-id="0c0b485" data-element_type="widget" data-widget_type="post-comments.theme_comments">
+                <div class="elementor-widget-container">
+                  <br />
+                  <section id="comments" class="comments-area">
+                    <div id="respond" class="comment-respond">
+                      <h2 id="reply-title" class="comment-reply-title" style="text-align: center; margin: 0 10%">
+                        Contribute Your Expertise: Submit a Blog
+                        <small>
+                          <a rel="nofollow" id="cancel-comment-reply-link" href="#respond" style="display: none">Cancel
+                            reply</a>
+                        </small>
+                      </h2>
+                      <p style="text-align: center">
+                        We invite passionate writers and experts in
+                        cybersecurity and IoT to share their insights with our
+                        community. Contribute your knowledge and experiences by
+                        submitting your blog post for our consideration!
+                      </p>
+
+                      <br />
+                      <div style="text-align: center;">
+                        <input name="submit" type="submit" id="submit" class="submit" value="Email us" />
+                      </div>
+                      </p>
+                    </div>
+
+                    <!-- #respond -->
+                  </section>
+                  <!-- .comments-area -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-8e0fdfc"
+            data-id="8e0fdfc" data-element_type="column">
+            <div class="elementor-widget-wrap elementor-element-populated">
+              <section
+                class="elementor-section elementor-inner-section elementor-element elementor-element-e08fe58 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                data-id="e08fe58" data-element_type="section" data-settings='{"background_background":"classic"}'>
+                <div class="elementor-background-overlay"></div>
+                <div class="elementor-container elementor-column-gap-default">
+                  <div
+                    class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-147ed61"
+                    data-id="147ed61" data-element_type="column">
+                    <div class="elementor-widget-wrap elementor-element-populated">
+                      <div class="elementor-element elementor-element-98d07db elementor-widget elementor-widget-heading"
+                        data-id="98d07db" data-element_type="widget" data-widget_type="heading.default">
+                        <div class="elementor-widget-container">
+                          <h3 class="elementor-heading-title elementor-size-default">
+                            Newsletter
+                          </h3>
+                        </div>
+                      </div>
+                      <div class="elementor-element elementor-element-f5a3c1d elementor-widget elementor-widget-heading"
+                        data-id="f5a3c1d" data-element_type="widget" data-widget_type="heading.default">
+                        <div class="elementor-widget-container">
+                          <div class="elementor-heading-title elementor-size-default">
+                            Sign up our newsletter to get update information,
+                            news and free insight.
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="elementor-element elementor-element-f7863ce elementor-widget-divider--view-line elementor-widget elementor-widget-divider"
+                        data-id="f7863ce" data-element_type="widget" data-widget_type="divider.default">
+                        <div class="elementor-widget-container">
+                          <div class="elementor-divider">
+                            <span class="elementor-divider-separator"> </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="elementor-element elementor-element-0f5231b elementor-button-align-stretch elementor-widget elementor-widget-form"
+                        data-id="0f5231b" data-element_type="widget"
+                        data-settings='{"button_width_tablet":"33","step_next_label":"Next","step_previous_label":"Previous","button_width":"100","step_type":"number_text","step_icon_shape":"circle"}'
+                        data-widget_type="form.default">
+                        <div class="elementor-widget-container">
+                          <form class="elementor-form" method="post" name="New Form">
+                            <input type="hidden" name="post_id" value="150" />
+                            <input type="hidden" name="form_id" value="0f5231b" />
+
+                            <input type="hidden" name="queried_id" value="115" />
+
+                            <div class="elementor-form-fields-wrapper elementor-labels-">
+                              <div
+                                class="elementor-field-type-email elementor-field-group elementor-column elementor-field-group-email elementor-col-100 elementor-md-66 elementor-field-required">
+                                <label for="form-field-email" class="elementor-field-label elementor-screen-only">
+                                  Email
+                                </label>
+                                <input size="1" type="email" name="form_fields[email]" id="form-field-email"
+                                  class="elementor-field elementor-size-md elementor-field-textual" placeholder="Email"
+                                  required="required" aria-required="true" value="" />
+                              </div>
+                              <div
+                                class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-100 e-form__buttons elementor-md-33">
+                                <button class="elementor-button elementor-size-md" type="submit">
+                                  <span class="elementor-button-content-wrapper">
+                                    <span class="elementor-button-icon">
+                                      <i aria-hidden="true" class="far fa-envelope"></i>
+                                    </span>
+                                    <span class="elementor-button-text">Sign Up</span>
+                                  </span>
+                                </button>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <!-- footer-one -->
+        <footer class="main__footer">
+          <div class="footer-top">
+            <div class="auto-container">
+              <div class="top-inner">
+                <div class="left__top">
+                  <h3>Looking For Best Digital Services</h3>
+                </div>
+                <div class="right__top">
+                  <!-- <div class="btn-box">
+                          <a href="contact.html" class="theme-btn theme-btn-one"><i class="icon-02"></i> Contact Us</a>
+                      </div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer__one">
+            <div class="footer-widget-section">
+              <div class="auto-container">
+                <div class="row clearfix">
+                  <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
+                    <div class="footer-widget footer-logo-widget wow fadeInUp animated" data-wow-delay="00ms"
+                      data-wow-duration="1500ms">
+                      <figure class="footer-logo">
+                        <a href=""><img src="./../Assets/img/logo.png" alt=""></a>
+                      </figure>
+                      <div class="text">
+                        <p>Our technologies are designed to empower businesses and individuals, ensuring they can thrive
+                          securely in the digital realm.</p>
+                      </div>
+                      <div class="btn-box">
+                        <a href="about.html" class="theme-btn theme-btn-one"><i class="icon-02"></i> About Us</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
+                    <div class="footer-widget news-letter-widget ml_80 wow fadeInUp animated" data-wow-delay="200ms"
+                      data-wow-duration="1500ms">
+                      <div class="widget-title">
+                        <h4>Newletter</h4>
+                      </div>
+                      <div class="text">
+                        <p>Integrate with your existing systems, minimizing disruption and maximizing productivity.</p>
+                      </div>
+                      <!-- <div class="subscribe-inner">
+                                  <form action="contact.html" method="post" class="subscribe-form">
+                                      <div class="form-group">
+                                          <input type="email" name="email" placeholder="Your mail address *" required="" value="">
+                                          <div class="btn-box">
+                                              <button class="theme-btn theme-btn-one" type="submit"><i class="icon-02"></i> GO</button>
+                                          </div>
+                                      </div>
+                                  </form>
+                              </div> -->
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
+                    <div class="footer-widget office-widget wow fadeInUp animated" data-wow-delay="400ms"
+                      data-wow-duration="1500ms">
+                      <div class="widget-title">
+                        <h4>Official info:</h4>
+                      </div>
+                      <div class="widget-content">
+                        <div class="text">
+                          <p>M.G.M Road, Kolkata-700007</p>
+                        </div>
+                        <a href="+918070309990">+91 8070309990</a>
+                        <a href="mailto:podstechnologysolutions@gmail.com">podstechnologysolutions@gmail.com</a>
+                        <a href="mailto:info@podstechnologysolutions.com">info@podstechnologysolutions.com</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-12 footer-column pr-0">
+                    <div class="footer-widget gallery-widget wow fadeInUp animated" data-wow-delay="600ms"
+                      data-wow-duration="1500ms">
+                      <div class="widget-title">
+                        <h4>Gallery</h4>
+                      </div>
+                      <div class="widget_content">
+                        <ul class="instagram_list clearfix">
+                          <li>
+                            <div class="inner__box">
+                              <div class="image__box">
+                                <a class="lightbox-image" data-fancybox="gallery" href="./../Assets/img/gallery-1.jpg"><img
+                                    src="./../Assets/img/gallery-01.jpg" alt=""></a>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="inner__box">
+                              <div class="image__box">
+                                <a class="lightbox-image" data-fancybox="gallery" href="./../Assets/img/gallery-2.jpg"><img
+                                    src="./../Assets/img/gallery-02.jpg" alt=""></a>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="inner__box">
+                              <div class="image__box">
+                                <a class="lightbox-image" data-fancybox="gallery" href="./../Assets/img/gallery-3.jpg"><img
+                                    src="./../Assets/img/gallery-03.jpg" alt=""></a>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="inner__box">
+                              <div class="image__box">
+                                <a class="lightbox-image" data-fancybox="gallery" href="./../Assets/img/gallery-4.jpg"><img
+                                    src="./../Assets/img/gallery-04.jpg" alt=""></a>
+                              </div>
+                            </div>
+                          </li>
+                          <!-- <li>
+                                          <div class="inner__box">
+                                              <div class="image__box">
+                                                  <a class="lightbox-image" data-fancybox="gallery" href="./Assets/img/gallery-05.jpg"><img src="./Assets/img/gallery-05.jpg" alt=""></a>
+                                              </div>
+                                          </div>
+                                      </li>
+                                      <li>
+                                          <div class="inner__box">
+                                              <div class="image__box">
+                                                  <a class="lightbox-image" data-fancybox="gallery" href="./Assets/gallery-06.jpg"><img src="./Assets/gallery-06.jpg" alt=""></a>
+                                              </div>
+                                          </div>
+                                      </li> -->
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer-bottom">
+              <div class="auto-container">
+                <div class="bottom-inner">
+                  <div class="copyright">
+                    <p>© 2024 <a href="">Pods Technology Solutions.</a> All rights reserved</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!-- footer-one end -->
+
+        <!--Scroll to top-->
+        <div class="scroll-to-top">
+          <div>
+            <div class="scroll-top-inner">
+              <div class="scroll-bar">
+                <div class="bar-inner"></div>
+              </div>
+              <div class="scroll-bar-text g_color">Go To Top</div>
+            </div>
+          </div>
+        </div>
+        <!-- Scroll to top end -->
+      </section>
+
+    </div>
+
+    <script type="text/javascript">
+      const lazyloadRunObserver = () => {
+        const lazyloadBackgrounds = document.querySelectorAll(
+          `.e-con.e-parent:not(.e-lazyloaded)`
+        );
+        const lazyloadBackgroundObserver = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                let lazyloadBackground = entry.target;
+                if (lazyloadBackground) {
+                  lazyloadBackground.classList.add("e-lazyloaded");
+                }
+                lazyloadBackgroundObserver.unobserve(entry.target);
+              }
+            });
+          },
+          { rootMargin: "200px 0px 200px 0px" }
+        );
+        lazyloadBackgrounds.forEach((lazyloadBackground) => {
+          lazyloadBackgroundObserver.observe(lazyloadBackground);
+        });
+      };
+      const events = ["DOMContentLoaded", "elementor/lazyload/observe"];
+      events.forEach((event) => {
+        document.addEventListener(event, lazyloadRunObserver);
+      });
+    </script>
+    <link rel="stylesheet" href="jquery.bxslider.css">
+    <link rel="stylesheet" id="widget-image-css" href="widget-image.min.css" media="all" />
+    <link rel="stylesheet" id="e-animation-fadeInUp-css" href="fadeInUp.min.css" media="all" />
+    <link rel="stylesheet" id="widget-heading-css" href="widget-heading.min.css" media="all" />
+    <link rel="stylesheet" id="widget-icon-list-css" href="widget-icon-list.min.css" media="all" />
+    <link rel="stylesheet" id="widget-divider-css" href="widget-divider.min.css" media="all" />
+    <link rel="stylesheet" id="e-animation-pop-css" href="e-animation-pop.min.css" media="all" />
+    <link rel="stylesheet" id="widget-social-icons-css" href="widget-social-icons.min.css" media="all" />
+    <link rel="stylesheet" id="e-apple-webkit-css" href="apple-webkit.min.css" media="all" />
+    <script src="hello-frontend.min.js" id="hello-theme-frontend-js"></script>
+    <script src="frontend-script.js" id="elementskit-framework-js-frontend-js"></script>
+    <script src="widget-scripts.js" id="ekit-widget-scripts-js"></script>
+    <script src="jquery.smartmenus.min.js" id="smartmenus-js"></script>
+    <script src="imagesloaded.min.js" id="imagesloaded-js"></script>
+    <script src="comment-reply.min.js" id="comment-reply-js" async="" data-wp-strategy="async"></script>
+    <script src="webpack-pro.runtime.min.js" id="elementor-pro-webpack-runtime-js"></script>
+    <script src="webpack.runtime.min.js" id="elementor-webpack-runtime-js"></script>
+    <script src="frontend-modules.min.js" id="elementor-frontend-modules-js"></script>
+    <script src="hooks.min.js" id="wp-hooks-js"></script>
+    <script src="i18n.min.js" id="wp-i18n-js"></script>
+    <script id="wp-i18n-js-after">
+      wp.i18n.setLocaleData({ "text direction\u0004ltr": ["ltr"] });
+    </script>
+
+    <script src="frontend.min.js" id="elementor-pro-frontend-js"></script>
+    <script src="core.min.js" id="jquery-ui-core-js"></script>
+    <script id="elementor-frontend-js-before">
+      var elementorFrontendConfig = {
+        environmentMode: {
+          edit: false,
+          wpPreview: false,
+          isScriptDebug: false,
+        },
+        i18n: {
+          shareOnFacebook: "Share on Facebook",
+          shareOnTwitter: "Share on Twitter",
+          pinIt: "Pin it",
+          download: "Download",
+          downloadImage: "Download image",
+          fullscreen: "Fullscreen",
+          zoom: "Zoom",
+          share: "Share",
+          playVideo: "Play Video",
+          previous: "Previous",
+          next: "Next",
+          close: "Close",
+          a11yCarouselWrapperAriaLabel:
+            "Carousel | Horizontal scrolling: Arrow Left & Right",
+          a11yCarouselPrevSlideMessage: "Previous slide",
+          a11yCarouselNextSlideMessage: "Next slide",
+          a11yCarouselFirstSlideMessage: "This is the first slide",
+          a11yCarouselLastSlideMessage: "This is the last slide",
+          a11yCarouselPaginationBulletMessage: "Go to slide",
+        },
+        is_rtl: false,
+        breakpoints: { xs: 0, sm: 480, md: 768, lg: 1025, xl: 1440, xxl: 1600 },
+        responsive: {
+          breakpoints: {
+            mobile: {
+              label: "Mobile Portrait",
+              value: 767,
+              default_value: 767,
+              direction: "max",
+              is_enabled: true,
+            },
+            mobile_extra: {
+              label: "Mobile Landscape",
+              value: 880,
+              default_value: 880,
+              direction: "max",
+              is_enabled: false,
+            },
+            tablet: {
+              label: "Tablet Portrait",
+              value: 1024,
+              default_value: 1024,
+              direction: "max",
+              is_enabled: true,
+            },
+            tablet_extra: {
+              label: "Tablet Landscape",
+              value: 1200,
+              default_value: 1200,
+              direction: "max",
+              is_enabled: false,
+            },
+            laptop: {
+              label: "Laptop",
+              value: 1366,
+              default_value: 1366,
+              direction: "max",
+              is_enabled: false,
+            },
+            widescreen: {
+              label: "Widescreen",
+              value: 2400,
+              default_value: 2400,
+              direction: "min",
+              is_enabled: false,
+            },
+          },
+        },
+        version: "3.24.0",
+        is_static: false,
+        experimentalFeatures: {
+          additional_custom_breakpoints: true,
+          container_grid: true,
+          e_swiper_latest: true,
+          e_nested_atomic_repeaters: true,
+          e_onboarding: true,
+          theme_builder_v2: true,
+          "hello-theme-header-footer": true,
+          home_screen: true,
+          "ai-layout": true,
+          "landing-pages": true,
+          "link-in-bio": true,
+          "floating-buttons": true,
+          "display-conditions": true,
+          "form-submissions": true,
+          "taxonomy-filter": true,
+        },
+        nonces: { floatingButtonsClickTracking: "f7d70e1ab3" },
+        swiperClass: "swiper",
+        settings: { page: [], editorPreferences: [] },
+        kit: {
+          body_background_background: "classic",
+          active_breakpoints: ["viewport_mobile", "viewport_tablet"],
+          global_image_lightbox: "yes",
+          lightbox_enable_counter: "yes",
+          lightbox_enable_fullscreen: "yes",
+          lightbox_enable_zoom: "yes",
+          lightbox_enable_share: "yes",
+          lightbox_title_src: "title",
+          lightbox_description_src: "description",
+          hello_header_logo_type: "title",
+          hello_header_menu_layout: "horizontal",
+          hello_footer_logo_type: "logo",
+        },
+
+      };
+    </script>
+    <script src="frontend.min-1.js" id="elementor-frontend-js"></script>
+    <script src="elements-handlers.min.js" id="pro-elements-handlers-js"></script>
+    <script src="animate-circle.min.js" id="animate-circle-js"></script>
+    <script src="elementor.js" id="elementskit-elementor-js"></script>
+
+    <!-- jequery plugins -->
+    <script src="./../jquery.js"></script>
+    <script src="./../bootstrap.min.js"></script>
+    <script src="./../owl.js"></script>
+    <script src="./../wow.js"></script>
+    <script src="./../jquery.fancybox.js"></script>
+    <script src="./../appear.js"></script>
+    <script src="./../scrollbar.js"></script>
+    <script src="./../swiper.min.js"></script>
+    <script src="./../parallax-scroll.js"></script>
+    <script src="./../https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.5/jquery.bxslider.js"></script>
+
+
+    <!-- main-js -->
+    <script src="./../script.js"></script>
+</body>
+
+</html>
