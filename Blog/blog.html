@@ -179,6 +179,18 @@
       padding: 0 !important;
     }
   </style>
+  <style>
+    #submit-blog {
+      margin: 2cm 5cm;
+    }
+  
+    @media (max-width: 768px) {
+      #submit-blog {
+        margin: 20px 10px;
+      }
+    }
+  </style>
+  
   <link rel="stylesheet" id="wp-block-library-css" href="style.min.css" media="all" />
   <style id="classic-theme-styles-inline-css">
     /*! This file is auto-generated */
@@ -709,7 +721,10 @@
                                           </ul> -->
                     </li>
                     <li><a href="./../about.html">About </a></li>
-                    <li class="dropdown"><a href="./../#service-section">Services </a>
+                    <li class="dropdown"><a href="./../#service-section" style="display: flex; align-items: center;">
+                        Services
+                        <span style="margin-right: 5px; margin-top: 5px;">&#129171;</span>
+                      </a>
                       <ul>
                         <li><a href="./../training.html">Cyber Security Training </a></li>
                         <li><a href="./../cyberSservices.html">Cyber Security Services</a></li>
@@ -977,32 +992,6 @@
                 data-id="0c0b485" data-element_type="widget" data-widget_type="post-comments.theme_comments">
                 <div class="elementor-widget-container">
                   <br />
-                  <section id="comments" class="comments-area">
-                    <div id="respond" class="comment-respond">
-                      <h2 id="reply-title" class="comment-reply-title" style="text-align: center; margin: 0 10%">
-                        Contribute Your Expertise: Submit a Blog
-                        <small>
-                          <a rel="nofollow" id="cancel-comment-reply-link" href="#respond" style="display: none">Cancel
-                            reply</a>
-                        </small>
-                      </h2>
-                      <p style="text-align: center">
-                        We invite passionate writers and experts in
-                        cybersecurity and IoT to share their insights with our
-                        community. Contribute your knowledge and experiences by
-                        submitting your blog post for our consideration!
-                      </p>
-
-                      <br />
-                      <div style="text-align: center;">
-                        <input name="submit" type="submit" id="submit" class="submit theme-btn theme-btn-one"
-                          value="Email us" />
-                      </div>
-                      </p>
-                    </div>
-
-                    <!-- #respond -->
-                  </section>
                   <!-- .comments-area -->
                 </div>
               </div>
@@ -1092,6 +1081,32 @@
             </div>
           </div>
         </div>
+      </section>
+      <section id="submit-blog" class="comments-area">
+        <div id="respond" class="comment-respond">
+          <h2 id="reply-title" class="comment-reply-title" style="text-align: center; margin: 0 10%">
+            Contribute Your Expertise: Submit a Blog
+            <small>
+              <a rel="nofollow" id="cancel-comment-reply-link" href="#respond" style="display: none">Cancel
+                reply</a>
+            </small>
+          </h2>
+          <p style="text-align: center">
+            We invite passionate writers and experts in
+            cybersecurity and IoT to share their insights with our
+            community. Contribute your knowledge and experiences by
+            submitting your blog post for our consideration!
+          </p>
+
+          <br />
+          <div style="text-align: center;">
+            <input name="submit" type="submit" id="submit" class="submit theme-btn theme-btn-one"
+              value="Email us" />
+          </div>
+          </p>
+        </div>
+
+        <!-- #respond -->
       </section>
       <section>
         <!-- footer-one -->
