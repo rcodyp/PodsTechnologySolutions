@@ -563,16 +563,37 @@
                                     <div class="text">
                                         <p>Integrate with your existing systems, minimizing disruption and maximizing productivity.</p>
                                     </div>
-                                    <!-- <div class="subscribe-inner">
-                                        <form action="contact.html" method="post" class="subscribe-form">
+                                    <div class="subscribe-inner">
+                                        <form method="post" id="newsletter-Submit">
                                             <div class="form-group">
-                                                <input type="email" name="email" placeholder="Your mail address *" required="" value="">
+                                                <input type="email" name="email" placeholder="Your mail address *"
+                                                    required="" value="">
+                                                <div id="N-msg"></div>
                                                 <div class="btn-box">
-                                                    <button class="theme-btn theme-btn-one" type="submit"><i class="icon-02"></i> GO</button>
+                                                    <button class="theme-btn theme-btn-one" type="submit"><i
+                                                            class="icon-02"></i> GO</button>
                                                 </div>
                                             </div>
                                         </form>
-                                    </div> -->
+                                        <script>
+                                            jQuery('#newsletter-Submit').on('submit',function(e){
+                                              e.preventDefault();
+                                              jQuery('#N-msg').html('Please wait...');
+                                              jQuery('#btnSubmit').attr('disabled',true);
+                                              jQuery.ajax({
+                                                  url:'https://script.google.com/macros/s/AKfycbyMzVEGj0xua3t5djV4porGj3edBNW8nqHGAxByJDjxe2EGOtePOUg56dQxwg2q3oWF9g/exec',
+                                                  type:'post',
+                                                  data:jQuery('#newsletter-Submit').serialize(),
+                                                  success:function(result){
+                                                      jQuery('#frmSubmit')[0].reset();
+                                                      jQuery('#N-msg').html('Thank You');
+                                                      jQuery('#btnSubmit').attr('disabled',false);
+                                                      //window.location.href='';
+                                                  }
+                                              });
+                                            });
+                                            </script>
+                                    </div> 
                                 </div>
                             </div>
                             <div class="col-lg-3 col-md-6 col-sm-12 footer-column">

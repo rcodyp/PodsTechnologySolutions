@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Submit Data to Google Sheets</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
+
 <body>
 
   <h2>Submit Data to Google Sheets</h2>
-  
+
   <!-- Form to capture user data -->
   <form action="https://sheetdb.io/api/v1/wvehqlrooj3in" method="post" id="sheetdb">
     <input type="text" name="name" placeholder="Name" required>
@@ -17,6 +20,51 @@
 
     <button type="submit">Submit</button>
   </form>
+
+
+  <form method="post" id="frmSubmit">
+    <div class="row clearfix">
+      <div class="col-xl-6 form-group">
+        <input type="name" name="Name" placeholder="Your Name *" required="" value="">
+      </div>
+      <div class="col-xl-6 col-lg-12 form-group">
+        <input type="email" name="Email" placeholder="Your Email *" required="" value="">
+      </div>
+      <div class="col-xl-6 col-lg-12 form-group">
+        <input type="text" name="Subject" placeholder="Your Subject " required="" value="">
+      </div>
+      <div class="col-xl-6 col-lg-12 form-group">
+        <input type="text" name="Phone" placeholder="Your Phone " required="" value="">
+      </div>
+      <div class="ccol-xl-6 col-lg-12 form-group">
+        <textarea name="Message" placeholder="Message"></textarea>
+      </div>
+      <div id="msg"></div>
+      <div class="col-xl-12 form-group message-btn btn-box">
+        <button class="theme-btn theme-btn-one" type="submit">Send your
+          Message</button>
+        <!--<input type="submit" value="Submit" name="submit">-->
+      </div>
+    </div>
+  </form>
+  <script>
+    jQuery('#frmSubmit').on('submit', function (e) {
+      e.preventDefault();
+      jQuery('#msg').html('Please wait...');
+      jQuery('#btnSubmit').attr('disabled', true);
+      jQuery.ajax({
+        url: 'https://script.google.com/macros/s/AKfycbwLL5X0zvYt5PafDWncfviqs3GlBiKKCTMuNRg77picRzzBJbAOkX5hB0nkqU-Tu8no/exec',
+        type: 'post',
+        data: jQuery('#frmSubmit').serialize(),
+        success: function (result) {
+          jQuery('#frmSubmit')[0].reset();
+          jQuery('#msg').html('Thank You');
+          jQuery('#btnSubmit').attr('disabled', false);
+          //window.location.href='';
+        }
+      });
+    });
+  </script>
 
   <!-- JavaScript to handle form submission 
   <script>
@@ -50,6 +98,7 @@
   </script>-->
 
 </body>
+
 </html>
 
 
